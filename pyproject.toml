@@ -1,13 +1,16 @@
 [project]
 authors = [{name = "Paul Tomasula", email = "ptomasula@gmail.com"}]
-dependencies = []
-name = "HydroToolboxWrapper"
+dependencies = ["pythonnet"]
+name = "hydro_toolbox_python"
 requires-python = ">= 3.11"
 version = "0.1.0"
 
 [build-system]
 build-backend = "hatchling.build"
 requires = ["hatchling"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hydrotoolbox"]
 
 [tool.pixi.workspace]
 channels = ["conda-forge"]
