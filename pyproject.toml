@@ -1,8 +1,8 @@
 [project]
 authors = [{name = "Paul Tomasula", email = "ptomasula@gmail.com"}]
 dependencies = ["pythonnet"]
-name = "hydro_toolbox_python"
-requires-python = ">= 3.11"
+name = "hydrotoolboxpython"
+requires-python = "<= 3.13"
 version = "0.1.0"
 
 [build-system]
@@ -17,6 +17,6 @@ channels = ["conda-forge"]
 platforms = ["win-64"]
 
 [tool.pixi.pypi-dependencies]
-hydrotoolboxwrapper = { path = ".", editable = true }
+hydrotoolboxpython = { path = ".", editable = true }
 
 [tool.pixi.tasks]
